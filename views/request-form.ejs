@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+<section class="create-post-main">
+    <div class="create-post-main-container">
+        <div class="create-post-text">
+            <h1>Search for your city's weather!</h1>
+        </div>
+        <form action="/submit-info" method="post">
+            <div class="form-group">
+                <label for="title">City:</label>
+                <input type="text" id="title" name="city" required>
+            </div>
+            <button type="submit" class="create-post-button">Submit</button>
+        </form>
+    </div>
+</section>
+<%- include("partials/footer.ejs") %>
